@@ -1,0 +1,13 @@
+
+
+<suite name="AmazonSuite">
+
+    <test name="BookSearchTest">
+
+        <classes>
+            <class name="tests.BookSearchTest"/>
+        </classes>
+
+    </test>
+
+</suite>
