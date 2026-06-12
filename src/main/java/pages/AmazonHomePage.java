@@ -3,6 +3,7 @@ package pages;
 import java.time.Duration;
 import java.util.List;
 
+import org.bouncycastle.asn1.eac.PublicKeyDataObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,6 +17,7 @@ public class AmazonHomePage {
     By searchBox = By.id("twotabsearchtextbox");
     By searchButton = By.id("nav-search-submit-button");
     By bookTitles = By.xpath("//h2/span");
+    By addTocart_btn = By.id("add-to-cart-button");
 
     public AmazonHomePage(WebDriver driver)
     {
@@ -45,4 +47,13 @@ public class AmazonHomePage {
         }
         return false;
     }
+    
+    public void addFirstProductToCart(){
+    	
+    	driver.findElements(addTocart_btn).get(0).click(); 
+    	
+    }
+    	
+   
+   
 }
